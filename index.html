@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			#canvas{
+				border: 1px solid deeppink;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="canvas" width="400" height="400"></canvas>
+		
+	</body>
+	<script>
+//		function drow(){
+//		var canvas=document.getElementById("canvas1");
+//			if(canvas.getContext){
+//				var ctx=canvas.getContext("2d");
+//				ctx.fillStyle="aqua";
+//				
+////				ctx.fillRect(100,100,200,200);
+////				ctx.strokeRect(50,50,300,300);
+////				ctx.clearRect(150,150,50,50)//矩形
+////				ctx.beginPath();
+////				ctx.moveTo(50,50);
+////				ctx.lineTo(200,200);
+////				ctx.lineTo(200,50);
+//////				ctx.lineTo(50,50);
+////				ctx.fill();
+////				ctx.stroke();//三角
+//
+//				ctx.beginPath();
+//				ctx.fillStyle="yellow"
+////				ctx.arc(200,200,50,0,10*Math.PI);
+////				ctx.fill();
+////				ctx.stroke();	
+////				ctx.rotate(30*Math.PI/180)
+//				ctx.translate(100,50);
+//				ctx.arc(150,150,100,Math.PI*1.5,Math.PI*0.5);
+//				ctx.arcTo(200,150,150,50,225);
+//				ctx.fill();
+//				
+//				
+//				ctx.beginPath();
+//				ctx.moveTo(20,20)
+//				ctx.quadraticCurveTo(100,150,350,50);
+//				ctx.stroke();
+//				
+//				
+//				ctx.beginPath();
+//				 ctx.moveTo(50,200);
+//			   	ctx.bezierCurveTo(150,50,200,60,500,300)
+//			    ctx.stroke();
+//				
+//				 ctx.beginPath();
+//				 ctx.save();
+//				 ctx.translate(300,0)
+//				 ctx.fillStyle="deeppink";
+//			    ctx.moveTo(75,40);
+//			    ctx.bezierCurveTo(75,37,70,25,50,25);
+//			    ctx.bezierCurveTo(20,25,20,62.5,20,62.5);
+//			    ctx.bezierCurveTo(20,80,40,102,75,120);
+//			    ctx.bezierCurveTo(110,102,130,80,130,62.5);
+//			    ctx.bezierCurveTo(130,62.5,130,25,100,25);
+//			    ctx.bezierCurveTo(85,25,75,37,75,40);
+//			    ctx.fill();
+//			    
+//			    ctx.beginPath();
+//			    ctx.fillStyle="greenyellow"
+////				ctx.restore();
+//				ctx.translate(200,100);
+//				ctx.moveTo(0,10)
+//			    ctx.arc(20,20,100,Math.PI*1.75,Math.PI*0.25,true);
+//			    ctx.fill();
+//			}
+//		}
+//
+//			drow();
+
+
+			var canvas = document.getElementById("canvas");
+			var ctx = canvas.getContext("2d");
+//			
+//			var x=100,y=100,spx=1,spy=2;
+//			function drow(){
+//				ctx.clearRect(0,0,800,800)
+//				ctx.beginPath();
+//				
+//				ctx.arc(x,y,100,Math.PI*1.75,Math.PI*0.25,true);
+//				ctx.fillStyle="aqua";
+//				ctx.fill();
+//			}
+//			function updata(){
+//				
+//				x+=spx;
+//				y+=spy;
+//				if(x>700||x<100){
+//					spx=-spx;
+//				}
+//				if(y>700||y<100){
+//					spy=-spy;
+//				}
+//				drow();
+//				requestAnimationFrame(updata);
+//			}
+////			setInterval(function(){
+////				drow();
+////				updata();
+////			},5)
+//			updata();
+//			
+			
+//			
+//				ctx.beginPath();
+//				ctx.arc(100,100,100,Math.PI*1.75,Math.PI*0.25,true);
+//				ctx.fillStyle="aqua";
+//				ctx.fill();
+//			canvas.addEventListener("click",function(e){
+//				
+//				var _x=e.offsetX;
+//				var _y=e.offsetY;
+//				if(ctx.isPointInPath(_x,_y)){
+//					ctx.fillStyle="#FF1493"
+//					ctx.fill();
+//				}
+//				setTimeout(function(){
+//					ctx.fillStyle="aqua";
+//					ctx.fill();
+//				},30)
+//			})
+//				
+//				
+//				ctx.beginPath();
+//				ctx.translate(300,0)
+//				ctx.lineJoin="round";
+//				ctx.lineCap="round"
+//				ctx.moveTo(100,100);
+//				ctx.lineTo(100,200);
+//				ctx.lineTo(200,150);
+//				ctx.lineTo(100,100);
+//				ctx.lineWidth=10
+//			
+//				ctx.stroke();
+//				ctx.fill();
+//				ctx.closePath()
+//				
+//				ctx.beginPath();
+//				ctx.fillRect(50,300,100,50)
+//				ctx.scale(2,2)
+//				ctx.fillRect(100,100,100,200)
+//				ctx.scale(2,2)
+//				ctx.fill()
+//				
+//				ctx.closePath();
+				
+//				ctx.beginPath();
+//				
+//				var lg=ctx.createLinearGradient(50,50,50,200);
+//				lg.addColorStop(0,"red");
+//				lg.addColorStop(0.2,"orange");
+//				lg.addColorStop(0.4,"yellow");
+//				lg.addColorStop(0.6,"green");
+//				lg.addColorStop(0.7,"#00ABEB");
+//				lg.addColorStop(1,"violet")
+//				ctx.fillStyle=lg;
+//				ctx.fillRect(50,50,200,150)
+//				ctx.strokeRect(50,50,200,150)
+//				ctx.stroke();
+//				ctx.closePath();//线性渐变
+
+//				ctx.beginPath();
+//				var rg1=ctx.createRadialGradient(50,50,20,50,50,50);
+//				rg1.addColorStop(0, '#F4F201');
+//				rg1.addColorStop(0.8, '#E4C700');
+//				rg1.addColorStop(1, 'rgba(228,199,0,0)')
+//				 var rg2 = ctx.createRadialGradient(105,105,20,112,120,50);
+//				  rg2.addColorStop(0, '#FF5F98');
+//				  rg2.addColorStop(0.75, '#FF0188');
+//				  rg2.addColorStop(1, 'rgba(255,1,136,0)');
+//				var rg3 = ctx.createRadialGradient(95,15,30,102,20,50);
+//				rg3.addColorStop(0, '#00C9FF');
+//				rg3.addColorStop(0.8, '#00B5E2');
+//				rg3.addColorStop(1, 'rgba(0,201,255,0)');
+//				
+//				ctx.fillStyle=rg1;
+//				ctx.fillRect(0,0,200,200);
+//				ctx.fillStyle=rg2;
+//				ctx.fillRect(0,0,200,200);
+//				ctx.fillStyle=rg3;
+//				ctx.fillRect(0,0,200,200)//球形渐变
+			
+				
+//				for(i=0;i<10;i++){
+//					for(j=0;j<10;j++){
+//						ctx.fillStyle="rgba("+Math.floor(0+25.5*i)+","+Math.floor(0+25.5*j)+
+//						",180,0.3)"
+////						ctx.fillRect(i*25,j*25,25,25)
+//						ctx.beginPath();
+//						ctx.arc(i*25,j*25,10,0,Math.PI*2)
+//						ctx.fill();
+//					}
+//				}
+				
+//				ctx.fillStyle="#FF1493"
+//				ctx.fillRect(100,100,100,100);
+//				ctx.fillStyle="aqua"
+//				ctx.fillRect(200,100,100,100);
+//				ctx.fillStyle="chartreuse"
+//				ctx.fillRect(100,200,100,100);
+//				ctx.fillStyle="gold"
+//				ctx.fillRect(200,200,100,100);
+//				ctx.globalAlpha=0.3
+//				for(i=0;i<10;i++){
+//					ctx.beginPath();
+//					ctx.fillStyle="white"
+//					ctx.arc(200,200,10*i,0,Math.PI*2);
+//					ctx.fill();
+//				}
+				
+				
+				var canvas = document.getElementById('canvas');
+var ctx = canvas.getContext('2d');
+var raf;
+var running = false;
+
+var ball = {
+  x: 100,
+  y: 100,
+  vx: 5,
+  vy: 1,
+  radius: 25,
+  color: 'blue',
+  draw: function() {
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.radius, 0, Math.PI*2, true);
+    ctx.closePath();
+    ctx.fillStyle = this.color;
+    ctx.fill();
+  }
+};
+
+function clear() {
+  ctx.fillStyle = 'rgba(255,255,255,0.3)';
+  ctx.fillRect(0,0,canvas.width,canvas.height);
+}
+
+function draw() {
+  clear();
+  ball.draw();
+  ball.x += ball.vx;
+  ball.y += ball.vy;
+
+  if (ball.y + ball.vy > canvas.height || ball.y + ball.vy < 0) {
+    ball.vy = -ball.vy;
+  }
+  if (ball.x + ball.vx > canvas.width || ball.x + ball.vx < 0) {
+    ball.vx = -ball.vx;
+  }
+
+  raf = window.requestAnimationFrame(draw);
+}
+
+canvas.addEventListener('mousemove', function(e){
+  if (!running) {
+    clear();
+    ball.x = e.clientX;
+    ball.y = e.clientY;
+    ball.draw();
+  }
+});
+
+canvas.addEventListener("click",function(e){
+  if (!running) {
+    raf = window.requestAnimationFrame(draw);
+    running = true;
+  }
+});
+
+canvas.addEventListener("mouseout",function(e){
+  window.cancelAnimationFrame(raf);
+  running = false;
+});
+
+ball.draw();
+
+
+(function(){
+	var a=b=5;
+	a++;
+	console.log(a);
+	console.log(b);
+})();
+	b++;
+	console.log(a);
+	console.log(b);
+
+	</script>
+</html>

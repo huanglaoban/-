@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<button id="btn">删除localStorage的key</button>
+	</body>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js" ></script>
+	<script>
+		if("localStorage" in window){
+			localStorage.setItem("comment",JSON.stringify({"name":"wawa"}));
+			localStorage.setItem("com",JSON.stringify([
+				{name:"大娃"},"二娃","三娃",
+			]))
+		}
+			var _comment=localStorage.getItem("com");
+			console.log(JSON.parse(_comment));
+		$("#btn").on("click",function(event){
+			event.preventDefault();
+//			localStorage.removeItem("comment");
+			localStorage.clear();
+//			var _comment=localStorage.getItem("comment");
+//			console.log(JSON.parse(_comment));
+		})
+	</script>
+</html>

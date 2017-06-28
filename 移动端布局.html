@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,
+			user-scalable=no">
+		<style>
+			/**{
+				margin: 0;padding: 0;
+			}
+			html,body{
+				height: 100%;
+				font-size: 16px;
+			}
+			body{
+				display: flex;
+				flex-direction: column;
+			}
+			header,footer{
+				height:100px;
+				text-align: center;
+				line-height: 100px;
+				background: darkorange;
+			}
+			section{
+				flex: 1;
+				overflow-y: scroll;
+			}/*flex方法*/
+			
+
+			
+			*{
+				margin: 0;padding: 0;
+			}
+			html,body{
+				/*position:relative;*/
+				font-size: 16px;
+				height: 100%;
+			}
+			header,footer{
+				width: 100%;
+				height: 100px;
+				text-align: center;
+				line-height: 100px;
+				
+				background: deepskyblue;
+				z-index: 100;
+			}
+			section{
+				width: 100%;
+				height:auto;
+				position: absolute;
+				top:100px;
+				bottom: 100px;
+				overflow-y:scroll;
+			}
+			header{
+				top:0;
+				position: relative;
+			}
+			footer{
+				bottom: 0;
+				position: absolute;
+				
+			}/*position：absolut方法*/
+		
+			
+			/**{
+				margin: 0;padding: 0;
+			}
+			body{
+				font-size: 16px;
+			}
+			header,footer{
+				width: 100%;
+				height: 100px;
+				text-align: center;
+				line-height: 100px;
+				position: fixed;
+				background: deeppink;
+			}
+			section{
+				overflow-y: scroll;
+				padding-top: 100px;
+				padding-bottom: 100px;
+			}
+			header{
+				top:0
+			}
+			footer{
+				bottom: 0;
+			}*/
+		</style>
+		<script>
+			(function(doc,win){
+				var docEl=doc.documentElement;
+				var resizeEvt="orientationchange" in window ?"orientationchanage":"resize"
+				var recalc=function(){
+					var clientWidth=docEl.clientWidth;
+					console.log(clientWidth)
+					docEl.style.fontSize=100*(clientWidth/750)+"px";
+				}
+				if(!doc.addEventListener)
+					return;
+				win.addEventListener(resizeEvt,recalc,false);
+				doc.addEventListener("DOMContentLoaded",recalc,false);
+			})(document,window);
+		</script>
+	</head>
+	<body>
+		<header id="head">中国有嘻哈</header>
+		<section>
+			<div>1乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div>
+			<div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div>
+			<div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div>
+			<div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div>
+			<div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div>
+			<div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞000</div>
+				<div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div>
+			<div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div>
+			<div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div>
+			<div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞</div>
+			<div>乱搞乱搞乱搞</div><div>乱搞乱搞乱搞000</div>
+		</section>
+		<footer>吐槽爱奇艺</footer>
+	</body>
+	<script>
+		var head=document.getElementById("head")
+		head.onclick=function(){
+			console.log(0000)
+		}
+		head.addEventListener("touchstart",function(event){
+			console.log(event.changedTouches[0].pageY)
+		})
+		head.addEventListener("touchmove",function(event){
+			console.log(200)
+		})
+		head.addEventListener("touchend",function(event){
+			console.log(100)
+		})
+	</script>
+</html>

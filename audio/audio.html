@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.audio{
+				width:256px;
+				height: 256px;
+				position: absolute;
+				background: url(../img/Vinyl.png) no-repeat;
+				animation: round 1s infinite linear;
+			}
+			.run{
+				animation-play-state:running;
+			}
+			.stop{
+				animation-play-state: paused;
+			}
+			@keyframes round{
+				0{
+					transform: rotate(0);
+				}
+				100%{
+					transform: rotate(360deg);
+				}
+				
+			}
+			
+		</style>
+	</head>
+	<body>
+		<audio src="ISwear.mp3" controls autoplay></audio>
+		<div class="audio"></div>
+	</body>
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script>
+		$(".audio").on("click",function(event){
+			event.preventDefault();
+			if($(this).hasClass("stop")){
+				$(this).addClass("run");
+				$(this).removeClass("stop");
+				$("audio")[0].play();
+				return
+			}
+			$(this).addClass("stop")
+			$(this).removeClass("run")
+			$("audio")[0].pause();
+			console.log($("audio"))
+		})
+	</script>
+</html>
